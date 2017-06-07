@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SoccerApp.Views.SelectGroupPage"
+    BackgroundColor="{StaticResource AccentColor1}"
+    Title="Select Group"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <StackLayout
+        BindingContext="{Binding SelectGroup}"
+        Padding="8">
+        <ListView
+            ItemsSource="{Binding Groups}"
+            HasUnevenRows="True"
+            IsPullToRefreshEnabled="True"
+            RefreshCommand="{Binding RefreshCommand}"
+            IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="8">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SelectGroupCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout 
+                                VerticalOptions="Center">
+                                <Label
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"
+                                    TextColor="Black"
+                                    Text="{Binding Name}">
+                                </Label>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

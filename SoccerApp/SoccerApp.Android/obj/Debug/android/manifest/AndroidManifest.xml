@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.SoccerApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+  <application android:label="@string/app_name" android:icon="@drawable/soccer_ball" android:name="md547ee5a228ec4941ab4c68232c4c66f18.MainApplication" android:allowBackup="true" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/MyTheme" android:name="md547ee5a228ec4941ab4c68232c4c66f18.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md531e46b185997765898cde66852db2a40.ConnectivityChangeBroadcastReceiver" />
+    <activity android:configChanges="orientation|screenSize" android:name="md5a3e164e78ade0c22cefea770ddd0bc49.MediaPickerActivity" />
+    <activity android:label="Web Authenticator" android:name="md550f8a10a740eb4fb6376baab8337ce22.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md550f8a10a740eb4fb6376baab8337ce22.WebAuthenticatorActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.SoccerApp.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.SoccerApp" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

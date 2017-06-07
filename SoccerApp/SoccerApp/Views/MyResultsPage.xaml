@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SoccerApp.Views.MyResultsPage"
+    BackgroundColor="{StaticResource AccentColor1}"
+    Title="My Results"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <StackLayout
+        BindingContext="{Binding MyResult}"
+        Padding="8">
+        <SearchBar Placeholder="Enter Team initials..." HeightRequest="40" Text="{Binding Filter,Mode=TwoWay}" SearchCommand="{Binding SearchResultCommand}">
+        </SearchBar>
+        <ListView
+            ItemsSource="{Binding Results}"
+            HasUnevenRows="True"
+            IsPullToRefreshEnabled="True"
+            RefreshCommand="{Binding RefreshCommand}"
+            IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0">
+                                <Image
+                                    Source="{Binding Match.Local.FullLogo}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    WidthRequest="50"
+                                    HeightRequest="50">
+                                </Image>
+                                <Label
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    TextColor="Black"
+                                    Text="{Binding Match.Local.Initials}">
+                                </Label>
+                            </StackLayout>
+                            <StackLayout
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"
+                                Grid.Column="1">
+                                <StackLayout>
+                                    <Label Text="Preficted" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"></Label>
+                                    <StackLayout
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="Center"
+                                    Orientation="Horizontal">
+                                        <Label
+                                        FontAttributes="Bold"
+                                        FontSize="40"
+                                        VerticalOptions="Center"
+                                        TextColor="Black"
+                                        BackgroundColor="White"
+                                        Text="{Binding Match.LocalGoals}">
+                                        </Label>
+                                        <Label
+                                        FontAttributes="Bold"
+                                        FontSize="Medium"
+                                        VerticalOptions="Center"
+                                        TextColor="Navy"
+                                        Text="  Vs.  ">
+                                        </Label>
+                                        <Label
+                                        FontAttributes="Bold"
+                                        FontSize="40"
+                                        VerticalOptions="Center"
+                                        TextColor="Black"
+                                        BackgroundColor="White"
+                                        Text="{Binding Match.VisitorGoals}">
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label
+                                    TextColor="Black"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Text="{Binding Match.DateTime, StringFormat='{0:yyyy/MM/dd HH:mm}'}}">
+                                        </Label>
+                                        <Label
+                                    TextColor="Black"
+                                            FontSize="Large"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Text="{Binding Points, StringFormat='Points : {0}'}">
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout 
+                                VerticalOptions="Center"
+                                HorizontalOptions="End"
+                                Grid.Column="2">
+                                <Image
+                                    Source="{Binding Match.Visitor.FullLogo}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    WidthRequest="50"
+                                    HeightRequest="50">
+                                </Image>
+                                <Label
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    TextColor="Black"
+                                    Text="{Binding Match.Visitor.Initials}">
+                                </Label>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

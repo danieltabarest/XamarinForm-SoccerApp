@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoccerApp.Views.PositionPage"
+             BackgroundColor="{StaticResource AccentColor1}"
+    Title="Position Page"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <StackLayout BindingContext="{Binding Position}"
+        Padding="8">
+        <ListView
+            ItemsSource="{Binding TournamentTeams}"
+            HasUnevenRows="True"
+            IsPullToRefreshEnabled="True"
+            RefreshCommand="{Binding RefreshCommand}"
+            IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="8">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SelectMatchCommand}"/>
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image
+                                    Grid.Column="0"
+                                    Source="{Binding Team.FullLogo}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    WidthRequest="50"
+                                    HeightRequest="50">
+                            </Image>
+                            <Label
+                                 Grid.Column="1"
+                                        HorizontalOptions="End"
+                                        TextColor="Black"
+                                        Text="{Binding MatchesPlayed}">
+                            </Label>
+                            <Label
+                                 Grid.Column="2"
+                                        HorizontalOptions="End"
+                                        TextColor="Black"
+                                        Text="{Binding Points}">
+                            </Label>
+                            <Label
+                                 Grid.Column="3"
+                                        HorizontalOptions="End"
+                                        TextColor="Black"
+                                        Text="{Binding DifferenceGoals}">
+                            </Label>
+                            <Label
+                                 Grid.Column="4"
+                                        HorizontalOptions="End"
+                                        TextColor="Black"
+                                        Text="{Binding Position}">
+                            </Label>
+                            
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
