@@ -2,6 +2,8 @@ using GalaSoft.MvvmLight;
 
 namespace SoccerApp.Droid.ViewModel
 {
+
+    // comentario
     /// <summary>
     /// This class contains properties that the main View can data bind to.
     /// <para>
