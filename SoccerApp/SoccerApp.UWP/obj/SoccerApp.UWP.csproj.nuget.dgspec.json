@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj",
         "projectName": "SoccerApp.UWP",
-        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\SoccerApp.UWP.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "uap10.0.18362": {
             "projectReferences": {
-              "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj"
+              "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj"
               }
             }
           }
@@ -74,7 +74,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[2.3.4.224, )"
+              "version": "[4.3.0.991211, )"
             }
           },
           "imports": [
@@ -105,12 +105,12 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj",
         "projectName": "SoccerApp",
-        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj"
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\danieltabarest\\XamarinForm-SoccerApp\\SoccerApp\\SoccerApp\\SoccerApp.csproj"
       },
       "frameworks": {
         "portable45-net45+win8+wpa81": {}

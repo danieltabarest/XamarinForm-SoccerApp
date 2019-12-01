@@ -2,7 +2,7 @@ package md51558244f76c53b6aeda52c8a337f2c37;
 
 
 public class DatePickerRenderer
-	extends md51558244f76c53b6aeda52c8a337f2c37.ViewRenderer_2
+	extends md51558244f76c53b6aeda52c8a337f2c37.DatePickerRendererBase_1
 	implements
 		mono.android.IGCUserPeer
 {

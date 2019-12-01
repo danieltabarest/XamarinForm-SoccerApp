@@ -2,7 +2,7 @@ package md58432a647068b097f9637064b8985a5e0;
 
 
 public class PickerRenderer
-	extends md58432a647068b097f9637064b8985a5e0.ViewRenderer_2
+	extends md58432a647068b097f9637064b8985a5e0.PickerRendererBase_1
 	implements
 		mono.android.IGCUserPeer
 {

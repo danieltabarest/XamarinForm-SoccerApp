@@ -11,9 +11,9 @@ public class SwipeRefreshLayout_OnRefreshListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onRefresh:()V:GetOnRefreshHandler:Android.Support.V4.Widget.SwipeRefreshLayout/IOnRefreshListenerInvoker, Xamarin.Android.Support.v4\n" +
+			"n_onRefresh:()V:GetOnRefreshHandler:Android.Support.V4.Widget.SwipeRefreshLayout/IOnRefreshListenerInvoker, Xamarin.Android.Support.SwipeRefreshLayout\n" +
 			"";
-		mono.android.Runtime.register ("Android.Support.V4.Widget.SwipeRefreshLayout+IOnRefreshListenerImplementor, Xamarin.Android.Support.v4", SwipeRefreshLayout_OnRefreshListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Support.V4.Widget.SwipeRefreshLayout+IOnRefreshListenerImplementor, Xamarin.Android.Support.SwipeRefreshLayout", SwipeRefreshLayout_OnRefreshListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class SwipeRefreshLayout_OnRefreshListenerImplementor
 	{
 		super ();
 		if (getClass () == SwipeRefreshLayout_OnRefreshListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Support.V4.Widget.SwipeRefreshLayout+IOnRefreshListenerImplementor, Xamarin.Android.Support.v4", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Support.V4.Widget.SwipeRefreshLayout+IOnRefreshListenerImplementor, Xamarin.Android.Support.SwipeRefreshLayout", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -2,7 +2,7 @@ package md51558244f76c53b6aeda52c8a337f2c37;
 
 
 public class ScrollViewRenderer
-	extends android.widget.ScrollView
+	extends android.support.v4.widget.NestedScrollView
 	implements
 		mono.android.IGCUserPeer
 {
@@ -43,14 +43,6 @@ public class ScrollViewRenderer
 		super (p0, p1, p2);
 		if (getClass () == ScrollViewRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.ScrollViewRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
-	}
-
-
-	public ScrollViewRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2, int p3)
-	{
-		super (p0, p1, p2, p3);
-		if (getClass () == ScrollViewRenderer.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.ScrollViewRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
 	}
 
 
