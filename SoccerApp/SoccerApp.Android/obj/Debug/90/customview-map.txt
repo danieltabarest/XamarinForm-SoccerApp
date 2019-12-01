@@ -1,0 +1,12 @@
+android.support.design.widget.TabLayout;obj\Debug\90\res\layout\tabbar.xml
+android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
+item;obj\Debug\90\res\values\styles.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Debug\90\lp\17\jl\res\values\strings.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Debug\90\lp\40\jl\res\values\strings.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Debug\90\lp\41\jl\res\values\strings.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Debug\90\lp\43\jl\res\values\strings.xml
+resources;obj\Debug\90\res\values\strings.xml
+resources;obj\Debug\90\res\values\styles.xml
+string;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Debug\90\lp\17\jl\res\values\strings.xml
+string;obj\Debug\90\res\values\strings.xml
+style;obj\Debug\90\res\values\styles.xml

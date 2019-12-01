@@ -12,6 +12,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SoccerApp
@@ -108,7 +114,13 @@ namespace SoccerApp
             }
         }
         #endregion
-
+        protected override void OnStart()
+        {
+            AppCenter.Start("android=6757ecd0-45e0-44dc-9280-c95152f3721b;" +
+                              "uwp={Your UWP App secret here};" +
+                              "ios={Your iOS App secret here}",
+                              typeof(Analytics), typeof(Crashes));
+        }
         #region Methods
         private void LoadParameters()
         {

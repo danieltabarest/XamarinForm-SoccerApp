@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Microsoft Corporation. All rights reserved.
+  ~ Licensed under the MIT License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.microsoft.appcenter.crashes"
+    android:versionCode="51"
+    android:versionName="2.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+</manifest>

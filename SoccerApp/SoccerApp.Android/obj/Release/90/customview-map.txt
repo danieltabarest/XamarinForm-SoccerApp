@@ -1,0 +1,12 @@
+android.support.design.widget.TabLayout;obj\Release\90\res\layout\tabbar.xml
+android.support.v7.widget.Toolbar;obj\Release\90\res\layout\toolbar.xml
+item;obj\Release\90\res\values\styles.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Release\90\lp\10\jl\res\values\strings.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Release\90\lp\11\jl\res\values\strings.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Release\90\lp\23\jl\res\values\strings.xml
+resources;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Release\90\lp\7\jl\res\values\strings.xml
+resources;obj\Release\90\res\values\strings.xml
+resources;obj\Release\90\res\values\styles.xml
+string;C:\Users\Usuario\Source\Repos\danieltabarest\XamarinForm-SoccerApp\SoccerApp\SoccerApp.Android\obj\Release\90\lp\23\jl\res\values\strings.xml
+string;obj\Release\90\res\values\strings.xml
+style;obj\Release\90\res\values\styles.xml

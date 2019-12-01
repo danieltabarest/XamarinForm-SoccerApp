@@ -1,8 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Paths>
-  <ManifestDocuments />
-  <NativeLibraries />
-  <Jars>
-    <Jar>obj\Debug\__library_projects__\FormsViewGroup\library_project_imports\formsviewgroup.jar</Jar>
-  </Jars>
-</Paths>
+<Paths><ManifestDocuments /><NativeLibraries><NativeLibrary>obj\Debug\lp\22\nl\arm64-v8a\libsqlcipher.so</NativeLibrary><NativeLibrary>obj\Debug\lp\22\nl\armeabi-v7a\libsqlcipher.so</NativeLibrary><NativeLibrary>obj\Debug\lp\22\nl\x86\libsqlcipher.so</NativeLibrary><NativeLibrary>obj\Debug\lp\22\nl\x86_64\libsqlcipher.so</NativeLibrary></NativeLibraries><Jars><Jar>obj\Debug\lp\0\jl\formsviewgroup.jar</Jar></Jars></Paths>
