@@ -4,6 +4,12 @@ GalaSoft.MvvmLight.Extras
 GalaSoft.MvvmLight.Platform
 ImageCircle.Forms.Plugin.Abstractions
 ImageCircle.Forms.Plugin.Android
+Microsoft.AppCenter.Analytics.Android.Bindings
+Microsoft.AppCenter.Analytics
+Microsoft.AppCenter.Android.Bindings
+Microsoft.AppCenter.Crashes.Android.Bindings
+Microsoft.AppCenter.Crashes
+Microsoft.AppCenter
 Microsoft.Practices.ServiceLocation
 Newtonsoft.Json
 Plugin.Connectivity.Abstractions
@@ -36,9 +42,4 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-Microsoft.AppCenter.Android.Bindings
-Microsoft.AppCenter.Analytics.Android.Bindings
-Microsoft.AppCenter.Analytics
-Microsoft.AppCenter
-Microsoft.AppCenter.Crashes.Android.Bindings
-Microsoft.AppCenter.Crashes
+System.Diagnostics.Tools
