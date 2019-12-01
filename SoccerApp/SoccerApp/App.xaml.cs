@@ -144,6 +144,7 @@ namespace SoccerApp
                 parameter.URLBase2 = urlBase2;
                 dataService.Update(parameter);
             }
+
         }
 
         protected override void OnSleep()
